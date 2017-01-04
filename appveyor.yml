@@ -6,7 +6,7 @@ nuget:
 environment:
   DOTNET_CLI_TELEMETRY_OPTOUT: 1
   COVERALLS_REPO_TOKEN:
-    secure: YsvEStNKbAg7H/LOLPCtzWC3uQInDtfA5OEZSojoFmwsLipWnQb8+F6qatL+Yc71
+    secure: 4S49JPNRFAgngbDua1OUBfLhePUkuA9MvLZRm8+DQgzxi7Yz7pTH01ZBRUYtBFV6
 before_build:
 - appveyor-retry dotnet restore -v Minimal
 test_script:
