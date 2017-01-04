@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3635F9D7-C748-456E-A189-E220795D659F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8220E31C-6FC0-4840-A48F-22D11EEC6B80}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Grids.API", "src\Grids.API\Grids.API.xproj", "{72857EC3-A775-4E41-A6E3-FA3FAFE43394}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{55BE787B-FD9A-4FE5-83FF-D48B0BC6BE3D}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Grids.Tests", "test\Grids.Tests\Grids.Tests.xproj", "{310F91C0-4958-4E89-9CC0-FB605B2ADBFE}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Grids.Core", "src\Grids.Core\Grids.Core.xproj", "{39D76CEC-9432-4F82-936E-4CC31BAD9749}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Grids.UI", "src\Grids.UI\Grids.UI.xproj", "{E0CE054D-A710-4F51-B493-219F5E46980D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72857EC3-A775-4E41-A6E3-FA3FAFE43394}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72857EC3-A775-4E41-A6E3-FA3FAFE43394}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72857EC3-A775-4E41-A6E3-FA3FAFE43394}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{72857EC3-A775-4E41-A6E3-FA3FAFE43394}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72857EC3-A775-4E41-A6E3-FA3FAFE43394}.Release|Any CPU.Build.0 = Release|Any CPU
+		{310F91C0-4958-4E89-9CC0-FB605B2ADBFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{310F91C0-4958-4E89-9CC0-FB605B2ADBFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{310F91C0-4958-4E89-9CC0-FB605B2ADBFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{310F91C0-4958-4E89-9CC0-FB605B2ADBFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39D76CEC-9432-4F82-936E-4CC31BAD9749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39D76CEC-9432-4F82-936E-4CC31BAD9749}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39D76CEC-9432-4F82-936E-4CC31BAD9749}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39D76CEC-9432-4F82-936E-4CC31BAD9749}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0CE054D-A710-4F51-B493-219F5E46980D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0CE054D-A710-4F51-B493-219F5E46980D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0CE054D-A710-4F51-B493-219F5E46980D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0CE054D-A710-4F51-B493-219F5E46980D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{72857EC3-A775-4E41-A6E3-FA3FAFE43394} = {3635F9D7-C748-456E-A189-E220795D659F}
+		{310F91C0-4958-4E89-9CC0-FB605B2ADBFE} = {55BE787B-FD9A-4FE5-83FF-D48B0BC6BE3D}
+		{39D76CEC-9432-4F82-936E-4CC31BAD9749} = {3635F9D7-C748-456E-A189-E220795D659F}
+		{E0CE054D-A710-4F51-B493-219F5E46980D} = {3635F9D7-C748-456E-A189-E220795D659F}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,149 @@
+﻿@{
+    ViewData["Title"] = "KendoUI";
+}
+
+@section css {
+    <link href="~/css/jquery-plugins/kendo/kendo.common.min.css" rel="stylesheet" />
+    <link href="~/css/jquery-plugins/kendo/kendo.default.min.css" rel="stylesheet" />
+    <link href="~/css/jquery-plugins/kendo/kendo.default.mobile.min.css" rel="stylesheet" />
+}
+
+<div class="col-lg-6 col-xs-12 alpha">
+    <div class="btn-group action-buttons pull-left">
+        <a class="btn btn-primary button-to-documentation" href="http://demos.telerik.com/kendo-ui/grid/index" target="_blank">Kendo Grid Documentation</a>
+        <button class="btn btn-secondary btn-save-state" title="Save your column order and size">Save State</button>
+        <button class="btn btn-success btn-load-state" title="Load your recent column order and size">Load State</button>
+    </div>
+</div>
+
+<div class="col-lg-6 col-xs-12 omega console-log">
+    <span></span>
+</div>
+
+<div id="div-example" class="col-lg-12 beta buffer-bottom-20">
+    <div class="theme-list">
+        <h4>Themes</h4>
+
+        <ul class="themes-grid k-widget k-listview k-selectable" style="touch-action: none;">
+            <li class="tc-item" data-skin-name="black">
+                <span class="tc-color" style="background-color: #0167cc"></span>
+                <span class="tc-color" style="background-color: #4698e9"></span>
+                <span class="tc-color" style="background-color: #272727"></span>
+                <span class="tc-name">Black</span>
+            </li>
+
+            <li class="tc-item" data-skin-name="blueopal">
+                <span class="tc-color" style="background-color: #076186"></span>
+                <span class="tc-color" style="background-color: #7ed3f6"></span>
+                <span class="tc-color" style="background-color: #94c0d2"></span>
+                <span class="tc-name">Blue Opal</span>
+            </li>
+
+            <li class="tc-item" data-skin-name="bootstrap">
+                <span class="tc-color" style="background-color: #3276b1"></span>
+                <span class="tc-color" style="background-color: #67afe9"></span>
+                <span class="tc-color" style="background-color: #fff"></span>
+                <span class="tc-name">Bootstrap</span>
+            </li>
+
+            <li class="tc-item active" data-skin-name="default">
+                <span class="tc-color" style="background-color: #ef6f1c"></span>
+                <span class="tc-color" style="background-color: #e24b17"></span>
+                <span class="tc-color" style="background-color: #5a4b43"></span>
+                <span class="tc-name">Default</span>
+            </li>
+
+            <li class="tc-item" data-skin-name="fiori">
+                <span class="tc-color" style="background-color: #007cc0"></span>
+                <span class="tc-color" style="background-color: #e6f2f9"></span>
+                <span class="tc-color" style="background-color: #f0f0f0"></span>
+                <span class="tc-name">Fiori</span>
+            </li>
+
+            <li class="tc-item" data-skin-name="blueopal">
+                <span class="tc-color" style="background-color: #363940"></span>
+                <span class="tc-color" style="background-color: #2eb3a6"></span>
+                <span class="tc-color" style="background-color: #fff"></span>
+                <span class="tc-name">Flat</span>
+            </li>
+
+            <li class="tc-item" data-skin-name="highcontrast">
+                <span class="tc-color" style="background-color: #b11e9c"></span>
+                <span class="tc-color" style="background-color: #880275"></span>
+                <span class="tc-color" style="background-color: #1b141a"></span>
+                <span class="tc-name">High Contrast</span>
+            </li>
+
+            <li class="tc-item" data-skin-name="material">
+                <span class="tc-color" style="background-color: #3f51b5"></span>
+                <span class="tc-color" style="background-color: #283593"></span>
+                <span class="tc-color" style="background-color: #fff"></span>
+                <span class="tc-name">Material</span>
+            </li>
+
+            <li class="tc-item" data-skin-name="materialblack">
+                <span class="tc-color" style="background-color: #3f51b5"></span>
+                <span class="tc-color" style="background-color: #1c1c1c"></span>
+                <span class="tc-color" style="background-color: #4d4d4d"></span>
+                <span class="tc-name">Material Black</span>
+            </li>
+
+            <li class="tc-item" data-skin-name="metro">
+                <span class="tc-color" style="background-color: #8ebc00"></span>
+                <span class="tc-color" style="background-color: #787878"></span>
+                <span class="tc-color" style="background-color: #fff"></span>
+                <span class="tc-name">Metro</span>
+            </li>
+
+            <li class="tc-item" data-skin-name="metroblack">
+                <span class="tc-color" style="background-color: #00aba9"></span>
+                <span class="tc-color" style="background-color: #0e0e0e"></span>
+                <span class="tc-color" style="background-color: #565656"></span>
+                <span class="tc-name">Metro Black</span>
+            </li>
+
+            <li class="tc-item" data-skin-name="moonlight">
+                <span class="tc-color" style="background-color: #ee9f05"></span>
+                <span class="tc-color" style="background-color: #40444f"></span>
+                <span class="tc-color" style="background-color: #212a33"></span>
+                <span class="tc-name">Moonlight</span>
+            </li>
+
+            <li class="tc-item" data-skin-name="nova">
+                <span class="tc-color" style="background-color: #ff4350"></span>
+                <span class="tc-color" style="background-color: #00acc1"></span>
+                <span class="tc-color" style="background-color: #303553"></span>
+                <span class="tc-name">Nova</span>
+            </li>
+
+            <li class="tc-item" data-skin-name="office365">
+                <span class="tc-color" style="background-color: #0072c6"></span>
+                <span class="tc-color" style="background-color: #cde6f7"></span>
+                <span class="tc-color" style="background-color: #fff"></span>
+                <span class="tc-name">Office 365</span>
+            </li>
+
+            <li class="tc-item" data-skin-name="silver">
+                <span class="tc-color" style="background-color: #298bc8"></span>
+                <span class="tc-color" style="background-color: #515967"></span>
+                <span class="tc-color" style="background-color: #eaeaec"></span>
+                <span class="tc-name">Silver</span>
+            </li>
+
+            <li class="tc-item" data-skin-name="uniform">
+                <span class="tc-color" style="background-color: #666"></span>
+                <span class="tc-color" style="background-color: #ccc"></span>
+                <span class="tc-color" style="background-color: #fff"></span>
+                <span class="tc-name">Uniform</span>
+            </li>
+        </ul>
+    </div>
+
+    <div id="div-grid"></div>
+</div>
+
+@section scripts {
+    <script src="~/js/jquery-plugins/kendo/kendo.all.min.js"></script>
+    <script src="~/js/jquery-plugins/jszip/jszip.min.js"></script>
+    <script src="~/js/site-kendo.js" asp-append-version="true"></script>
+}

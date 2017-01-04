@@ -1,0 +1,70 @@
+﻿a,
+a:focus,
+a:hover { color: #fff; text-decoration: none; }
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus { color: #333; text-shadow: none; background-color: #fff; border: .05rem solid #fff; }
+
+html, body { background-color: #333; }
+body { color: #fff; }
+
+.alpha { padding-left: 0; }
+.omega { padding-right: 0; }
+.beta { padding: 0; }
+
+.grid-box { border: 1px solid #ecf0f1; height: 100px; line-height: 100px; }
+.grid-box a { display: block; }
+.grid-box:hover { background-color: #bdc3c7; cursor: pointer; }
+.grid-box:hover a { color: #555; }
+
+.theme-list { border: 0; text-align: left; overflow: hidden; background-color: #ecf0f1; margin-bottom: 10px; padding: 5px 10px; color: #555; }
+.theme-list h4 { text-transform: uppercase; font-size: 1em; line-height: 25px; }
+.theme-list ul { float: left; overflow: hidden; border: 0; background-color: #ecf0f1; }
+.theme-list ul li { display: inline-block; width: 132px; cursor: pointer; line-height: 26px; color: #2d3e50; padding: 0 10px; transition-property: background-color; transition-duration: 0.1s; transition-timing-function: ease; font-size: 0.8em; }
+.theme-list ul li:hover, .theme-list ul li.active { background-color: #cad0d6; }
+.theme-list ul li span.tc-color { border-radius: 50%; display: inline-block; width: 10px; height: 10px; }
+
+.console-log { height: 40px; }
+.console-log span { line-height: 40px; }
+
+.buffer-bottom-10 { margin-bottom: 10px; }
+.buffer-bottom-20 { margin-bottom: 20px; }
+.buffer-bottom-30 { margin-bottom: 30px; }
+.buffer-bottom-40 { margin-bottom: 40px; }
+.buffer-bottom-50 { margin-bottom: 50px; }
+.buffer-bottom-60 { margin-bottom: 60px; }
+
+.buffer-top-10 { margin-top: 10px; }
+.buffer-top-20 { margin-top: 20px; }
+.buffer-top-30 { margin-top: 30px; }
+.buffer-top-40 { margin-top: 40px; }
+.buffer-top-50 { margin-top: 50px; }
+.buffer-top-60 { margin-top: 60px; }
+
+.action-buttons { margin-bottom: 10px; }
+
+@media (min-width: 48em) {
+    .masthead-brand { float: left; }
+    .nav-masthead { float: right; }
+}
+
+.cover { padding: 0 1.5rem; }
+.cover .btn-lg { padding: .75rem 1.25rem; font-weight: bold; }
+
+.mastfoot { color: rgba(255,255,255,.5); }
+
+@media (min-width: 40em) {
+    .masthead { position: fixed; top: 0; }
+    .mastfoot { position: fixed; bottom: 0; }
+    .site-wrapper-inner { vertical-align: middle; }
+    .masthead,
+    .mastfoot,
+    .cover-container { width: 100%; }
+}
+
+@media (min-width: 62em) {
+    .masthead,
+    .mastfoot,
+    .cover-container { width: 42rem; }
+}

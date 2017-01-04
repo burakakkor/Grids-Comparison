@@ -1,0 +1,15 @@
+version: '1.0.{build}'
+configuration: Release
+platform: Any CPU
+nuget:
+  disable_publish_on_pr: true
+environment:
+  DOTNET_CLI_TELEMETRY_OPTOUT: 1
+  COVERALLS_REPO_TOKEN:
+    secure: YsvEStNKbAg7H/LOLPCtzWC3uQInDtfA5OEZSojoFmwsLipWnQb8+F6qatL+Yc71
+before_build:
+- appveyor-retry dotnet restore -v Minimal
+test_script:
+- dotnet test "%APPVEYOR_BUILD_FOLDER%\Grids\test\Grids.Tests\project.json" --configuration Release -f netcoreapp1.0 --no-build
+- bash coverage.sh
+- bash coveralls.sh

@@ -1,0 +1,8 @@
+{
+  "name": "Grids.UI",
+  "private": true,
+  "dependencies": {
+    "jquery": "1.12.3",
+    "bootstrap": "4.0"
+  }
+}
