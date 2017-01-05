@@ -1,8 +1,8 @@
 # grids-comparison
 
-basic implementation of [KendoUI Grid](http://www.telerik.com/kendo-ui) on .NET Core with;
-- bootstrap 4
-- xUnit 2.2
+basic implementation of [KendoUI Grid](http://www.telerik.com/kendo-ui/grid "Kendo UI Grid") on .NET Core with;
+- [bootstrap 4](https://v4-alpha.getbootstrap.com "bootstrap 4")
+- [xUnit 2.2](https://xunit.github.io/ "xUnit")
 
 kendoUI implementation includes;
 - calling API with ajax to get data and render 150± columns with 100 row
